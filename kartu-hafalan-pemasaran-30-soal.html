@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kartu Hafalan Pemasaran (30 soal)</title>
+<style>
+:root{--bg:#EEF3F1;--card:#FFFFFF;--ink:#12263A;--mute:#52667A;--acc:#0F766E;--accink:#FFFFFF;--hi:#F2B705;--ok:#157347;--bad:#B3261E;--line:#C9D6D1;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E1A24;--card:#162633;--ink:#E8EFF3;--mute:#9FB2C0;--acc:#2DD4BF;--accink:#06201C;--hi:#F2C94C;--ok:#5BD08A;--bad:#FF8A80;--line:#2A3F50;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0E1A24;--card:#162633;--ink:#E8EFF3;--mute:#9FB2C0;--acc:#2DD4BF;--accink:#06201C;--hi:#F2C94C;--ok:#5BD08A;--bad:#FF8A80;--line:#2A3F50;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:560px;margin:0 auto;padding:20px 16px 40px}
+h1{font:700 1.7rem/1.2 Georgia,"Iowan Old Style",serif;margin:8px 0 8px}
+.lead{color:var(--mute);margin:0 0 18px}
+button{font:inherit;font-weight:600;border:0;border-radius:10px;padding:12px 16px;background:var(--acc);color:var(--accink);cursor:pointer;min-height:44px}
+button.sec{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+button.ghost{background:transparent;color:var(--mute);padding:8px 0;min-height:0}
+button:focus-visible,input:focus-visible{outline:3px solid var(--hi);outline-offset:2px}
+input{font:inherit;width:100%;padding:11px 12px;border-radius:10px;border:1.5px solid var(--line);background:var(--card);color:var(--ink)}
+.f{display:block;font-weight:600;margin-bottom:16px}.f input{margin-top:6px;font-weight:400}
+.list{display:grid;gap:10px;margin-bottom:16px}
+.stage{display:flex;justify-content:space-between;align-items:center;gap:12px;text-align:left;background:var(--card);color:var(--ink);border:1.5px solid var(--line);padding:14px 16px}
+.stage small{display:block;color:var(--mute);font-weight:400}
+.stage em{font-style:normal;color:var(--acc);font-weight:700}
+.top{display:flex;justify-content:space-between;align-items:center;color:var(--mute);font-size:.95rem;margin-bottom:12px}
+.card{background:var(--card);border-radius:16px;border-left:8px solid var(--hi);padding:26px 22px;min-height:230px;box-shadow:0 1px 0 var(--line)}
+.card h2{font:700 1.35rem/1.25 Georgia,"Iowan Old Style",serif;margin:0 0 14px;color:var(--acc)}
+.card p{font:1.3rem/1.55 Georgia,"Iowan Old Style",serif;margin:0}
+.bar{height:10px;border-radius:6px;background:var(--line);margin:18px 0 6px;overflow:hidden}
+.bar i{display:block;height:100%;width:100%;background:var(--acc);transition:width .25s linear}
+.tl{color:var(--mute);margin-bottom:16px}.tl b{font-size:1.4rem;color:var(--ink)}
+.row{display:flex;gap:10px;flex-wrap:wrap}.row button{flex:1 1 140px}
+.q{display:block;background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:12px;margin-bottom:10px}
+.q span{display:block;margin-bottom:8px}
+.q small{display:block;margin-top:6px;font-weight:600;min-height:1em}
+.q.ok{border-color:var(--ok)}.q.ok small{color:var(--ok)}
+.q.bad{border-color:var(--bad)}.q.bad small{color:var(--bad)}
+.score{display:flex;align-items:baseline;gap:12px;margin:16px 0}.score b{font-size:2rem}
+pre{background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:12px;white-space:pre-wrap;font:inherit}
+.err{color:var(--bad);font-weight:600;min-height:1.4em;margin:0 0 8px}.stage:disabled{opacity:.6;cursor:default}.tb{width:100%;border-collapse:collapse;margin-bottom:16px}.tb td{padding:8px 4px;border-bottom:1px solid var(--line)}.tb td:last-child{text-align:right;font-weight:700}.rv{padding-left:18px;color:var(--mute)}h2{font:700 1.1rem/1.3 Georgia,serif;margin:20px 0 8px}
+@media (prefers-reduced-motion:reduce){.bar i{transition:none}}
+</style></head>
+<body><main id="app"></main>
+<script>
+const S=[
+{t:"Pemasaran",c:[
+["Apa itu pemasaran?","**Pemasaran** adalah semua kegiatan untuk **mengenalkan produk**, membuat orang **tertarik**, lalu mau **membeli** dan **membeli lagi**."],
+["Jualan vs pemasaran","**Jualan** hanya satu momen: barang diserahkan, uang diterima. **Pemasaran** adalah seluruh proses, dari sebelum orang kenal produk sampai pembeli puas."],
+["Tujuan pemasaran","Tujuannya supaya **produk dikenal**, **banyak yang membeli**, dan **pembeli mau kembali lagi**. Hasil akhirnya: usaha **untung dan bertahan lama**."],
+["Kebutuhan dan keinginan","**Kebutuhan** adalah sesuatu yang harus dipenuhi, misalnya makan dan minum. **Keinginan** adalah sesuatu yang ingin dimiliki, misalnya makan di kafe yang kekinian."],
+["Pasar","**Pasar** adalah kumpulan orang yang **mau dan mampu membeli** produk kita. Tidak semua orang jadi pembeli. Kita harus tahu pembeli kita **siapa**."],
+["Pelanggan","**Pelanggan** adalah orang yang **membeli**, terutama yang **membeli berulang kali**. Pelanggan yang puas biasanya **mengajak teman** untuk ikut membeli."],
+["Nilai produk","Orang membeli karena **manfaat**, bukan hanya barangnya. Produk yang **bermanfaat**, **enak dipakai**, dan **harganya sepadan** punya nilai tinggi di mata pembeli."],
+["Pesaing","**Pesaing** adalah usaha lain yang menjual produk serupa kepada pembeli yang sama. Kita harus punya **kelebihan** supaya pembeli memilih kita."],
+["Offline dan online","**Offline:** spanduk, brosur, bazar, mulut ke mulut. **Online:** media sosial, WhatsApp, marketplace. Usaha zaman sekarang sebaiknya memakai **keduanya**."],
+["Ciri pemasaran yang berhasil","Pemasaran berhasil jika **pembeli puas**, **membeli lagi**, dan **merekomendasikan** ke orang lain. Bukan hanya sekali laku lalu hilang."]],
+q:[
+["Semua kegiatan untuk mengenalkan produk sampai orang mau membeli disebut ………",["pemasaran"],"Pemasaran"],
+["Kegiatan yang hanya satu momen, barang diserahkan dan uang diterima, disebut ………",["jualan","menjual","penjualan"],"Jualan"],
+["Sesuatu yang harus dipenuhi, seperti makan dan minum, disebut ………",["kebutuhan"],"Kebutuhan"],
+["Sesuatu yang ingin dimiliki, bukan harus, disebut ………",["keinginan"],"Keinginan"],
+["Kumpulan orang yang mau dan mampu membeli produk kita disebut ………",["pasar"],"Pasar"],
+["Orang yang membeli berulang kali disebut ………",["pelanggan"],"Pelanggan"],
+["Orang membeli karena ……… dari produk, bukan hanya barangnya.",["manfaat"],"Manfaat"],
+["Usaha lain yang menjual produk serupa kepada pembeli yang sama disebut ………",["pesaing","kompetitor"],"Pesaing"],
+["Pemasaran lewat media sosial, WhatsApp, dan marketplace disebut pemasaran ………",["online","daring"],"Online"],
+["Pemasaran berhasil jika pembeli puas, membeli lagi, dan ……… ke orang lain.",["rekomen","mengajak","menyarankan"],"Merekomendasikan"]]},
+{t:"Bauran Pemasaran (4P)",c:[
+["Apa itu 4P?","**Bauran pemasaran (4P)** adalah **4 hal yang kita atur** supaya produk laku: **Product, Price, Place, Promotion**."],
+["Product (produk)","**Product** adalah **apa yang kita jual**. Pertanyaannya: *produk ini menyelesaikan masalah siapa?* Ini mencakup barang maupun jasa."],
+["Yang termasuk produk","Produk bukan hanya barangnya. Ada juga **rasa, kualitas, kemasan, merek (nama), dan manfaat**. Kemasan bagus dan nama menarik menaikkan nilai produk."],
+["Price (harga)","**Price** adalah **harga jual**. Harga yang baik harus: **menutup modal**, **ada untungnya**, dan **terjangkau** oleh pembeli."],
+["Strategi harga","**Harga murah:** untung tipis tapi banyak pembeli. **Harga premium:** lebih mahal tapi kualitas tinggi. **Harga paket:** beli banyak jadi lebih hemat."],
+["Place (tempat)","**Place** adalah **di mana dan bagaimana** pembeli bisa membeli produk kita. Prinsipnya: jual di tempat **pembeli kita berada**."],
+["Contoh saluran penjualan","**Toko/lapak**, **media sosial dan WhatsApp**, **marketplace**, **titip di warung/kantin**, dan **layanan antar** atau COD."],
+["Promotion (promosi)","**Promotion** adalah cara **mengenalkan dan membujuk** orang supaya mau membeli. Pertanyaannya: *bagaimana orang tahu produk kita?*"],
+["Contoh promosi","**Konten di Instagram/TikTok**, **diskon**, **beli 2 gratis 1**, **sampel gratis**, **testimoni pelanggan**, dan **gratis ongkir**."],
+["Contoh lengkap 4P","**Es teh jumbo.** Product = 3 varian rasa, gelas bermerek. Price = Rp5.000. Place = depan sekolah dan pesan via WhatsApp. Promotion = video TikTok dan beli 5 gratis 1."]],
+q:[
+["Empat P dalam bauran pemasaran adalah Product, Price, ………, dan Promotion.",["place","tempat"],"Place"],
+["Hal yang kita jual, baik barang maupun jasa, termasuk unsur ………",["product","produk"],"Product (produk)"],
+["Tiga syarat harga yang baik: menutup modal, ada untungnya, dan ……… oleh pembeli.",["terjangkau"],"Terjangkau"],
+["Menentukan di mana pembeli bisa membeli produk termasuk unsur ………",["place","tempat"],"Place (tempat)"],
+["Diskon, beli 2 gratis 1, dan konten TikTok termasuk unsur ………",["promotion","promosi"],"Promotion (promosi)"],
+["Selain rasa, kualitas, dan manfaat, kemasan dan ……… (nama) juga termasuk bagian dari produk.",["merek","nama","brand"],"Merek"],
+["Strategi harga yang untungnya tipis tetapi pembelinya banyak disebut harga ………",["murah"],"Murah"],
+["Strategi harga yang lebih mahal tetapi kualitasnya tinggi disebut harga ………",["premium"],"Premium"],
+["Prinsip Place: jual di tempat ……… kita berada.",["pembeli","konsumen","pelanggan"],"Pembeli"],
+["Promotion adalah cara mengenalkan dan ……… orang supaya mau membeli.",["membujuk","bujuk","mengajak","memengaruhi","mempengaruhi"],"Membujuk"]]},
+{t:"Corong Pemasaran",c:[
+["Apa itu corong pemasaran?","**Corong pemasaran** adalah gambaran **perjalanan calon pembeli**, dari belum kenal produk sampai membeli dan menjadi pelanggan setia."],
+["Kenapa disebut corong?","Bentuknya seperti corong: **atas lebar, bawah sempit**. Banyak orang masuk di atas, tapi **hanya sebagian** yang sampai ke bawah dan membeli."],
+["Tahap 1: Awareness (tahu)","Orang **mulai tahu** produk kita. Pikirannya: “Oh, ada produk ini ya.” Yang dilakukan: posting konten, pasang spanduk, ikut bazar."],
+["Tahap 2: Interest (tertarik)","Orang **mulai penasaran** dan membandingkan. Pikirannya: “Kelihatannya bagus, cek dulu ah.” Yang dilakukan: tampilkan keunggulan, testimoni, harga jelas."],
+["Tahap 3: Decision (beli)","Orang **memutuskan membeli**. Pikirannya: “Oke, aku beli.” Yang dilakukan: permudah pembelian, beri promo, layani dengan ramah."],
+["Tahap 4: Loyalty (setia)","Pembeli **puas, beli lagi, dan merekomendasikan** ke orang lain. Yang dilakukan: ucapkan terima kasih, diskon pelanggan lama, minta ulasan."],
+["Contoh perjalanan pembeli","Rina **melihat** video es teh di TikTok (tahu). Rina **membuka profil dan ulasan** (tertarik). Rina **membeli** karena ada promo (beli). Rina **beli lagi** dan mengajak 3 teman (setia)."],
+["Contoh angka corong","Dari **100 orang** yang tahu produk: **40** tertarik, **10** membeli, **5** membeli lagi. Makin ke bawah, jumlah orang **makin sedikit**."],
+["Corong yang bocor","Tugas pemasar adalah **mengurangi orang yang hilang** di tiap tahap. Jika banyak yang tahu tapi sedikit yang membeli, **periksa tahap mana yang bermasalah**."],
+["Hubungan 4P dan corong","Tahu = **Promotion** dan **Place**. Tertarik = **Product** dan **Promotion**. Beli = **Price** dan **Place**. Setia = **Product** (kualitas tetap baik) dan layanan."]],
+q:[
+["Empat tahap corong pemasaran: Awareness, Interest, ………, dan Loyalty.",["decision","beli","action","keputusan"],"Decision (beli)"],
+["Tahap saat orang mulai penasaran dan membandingkan produk disebut ………",["interest","tertarik"],"Interest (tertarik)"],
+["Pembeli yang puas, membeli lagi, dan merekomendasikan produk berada di tahap ………",["loyalty","setia"],"Loyalty (setia)"],
+["Corong pemasaran berbentuk atas lebar dan bawah ………, artinya makin ke bawah orang makin sedikit.",["sempit","kecil"],"Sempit"],
+["Tahap Beli paling berkaitan dengan dua P, yaitu Price dan ………",["place","tempat"],"Place"],
+["Tahap saat orang mulai tahu produk kita disebut ………",["awareness","tahu"],"Awareness (tahu)"],
+["Corong pemasaran adalah gambaran perjalanan calon ……… dari belum kenal sampai menjadi pelanggan setia.",["pembeli","konsumen","pelanggan"],"Pembeli"],
+["Tugas pemasar adalah mengurangi orang yang ……… di tiap tahap corong.",["hilang","bocor","pergi"],"Hilang"],
+["Tahap Setia berkaitan dengan Product, yaitu kualitas harus tetap ………",["baik","bagus"],"Baik"],
+["Ucapkan terima kasih, beri diskon pelanggan lama, dan minta ……… adalah kegiatan di tahap Setia.",["ulasan","review","testimoni"],"Ulasan"]]}
+];
+const app=document.getElementById("app"),R={},A={};
+let name="",kelas="",st=0,ix=0,tm=null,t0=0;
+const DUR=20,KKM=78;
+const $=id=>document.getElementById(id);
+const B=s=>s.replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/\*(.+?)\*/g,"<em>$1</em>");
+const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const norm=s=>s.toLowerCase().replace(/[^a-z0-9 ]/g," ").replace(/\s+/g," ").trim();
+const total=()=>S.reduce((a,s)=>a+s.q.length,0);
+const benar=()=>S.reduce((a,_,i)=>a+(R[i]||0),0);
+
+function home(){
+  clearInterval(tm);
+  const done=Object.keys(R).length,all=done===S.length,ro=done?"readonly":"";
+  app.innerHTML=`<h1>Kartu Hafalan Pemasaran</h1>
+  <p class="lead">Setiap kartu tampil 20 detik lalu pindah sendiri. Setelah 10 kartu, kartu ditutup dan kamu menjawab dari ingatan. Setiap tahap hanya bisa dikerjakan satu kali.</p>
+  <label class="f">Nama<input id="nm" value="${esc(name)}" placeholder="Tulis namamu" autocomplete="off" ${ro}></label>
+  <label class="f">Kelas<input id="kl" value="${esc(kelas)}" placeholder="Contoh: XII TKR 4" autocomplete="off" ${ro}></label>
+  <p class="err" id="er" role="alert"></p>
+  <div class="list">${S.map((s,i)=>R[i]!=null
+    ?`<button class="stage" disabled><span><b>Tahap ${i+1}: ${s.t}</b><small>Sudah dikerjakan</small></span><em>Selesai</em></button>`
+    :`<button class="stage" data-a="stage" data-i="${i}"><span><b>Tahap ${i+1}: ${s.t}</b><small>10 kartu, ${s.q.length} soal isian</small></span><em>Mulai</em></button>`).join("")}</div>
+  ${all?`<button data-a="sum">Lihat penilaian akhir</button>`:done?`<p class="lead">Penilaian akhir muncul setelah ketiga tahap selesai.</p>`:""}`;
+}
+function card(){
+  const c=S[st].c[ix];
+  app.innerHTML=`<div class="top"><span>Tahap ${st+1}</span><span>Kartu ${ix+1} dari 10</span></div>
+  <article class="card"><h2>${c[0]}</h2><p>${B(c[1])}</p></article>
+  <div class="bar"><i id="fill"></i></div><div class="tl"><b id="sec">${DUR}</b> detik</div>`;
+  clearInterval(tm);t0=Date.now();tm=setInterval(tick,250);
+}
+function tick(){
+  const left=Math.max(0,DUR-(Date.now()-t0)/1000);
+  $("sec").textContent=Math.ceil(left);$("fill").style.width=(left/DUR*100)+"%";
+  if(left<=0){clearInterval(tm);ix++;if(ix>=10)quiz();else card();}
+}
+function quiz(){
+  const s=S[st];
+  app.innerHTML=`<div class="top"><span>Tahap ${st+1}</span><span>Isian singkat</span></div>
+  <p class="lead">Kartu sudah ditutup. Isi titik-titik dari ingatanmu. Jawaban tidak bisa diubah setelah dikumpulkan.</p>
+  ${s.q.map((q,i)=>`<label class="q"><span>${i+1}. ${q[0]}</span><input data-q="${i}" autocomplete="off" autocapitalize="off"></label>`).join("")}
+  <div class="row"><button data-a="submit">Kumpulkan jawaban</button></div>`;
+  window.scrollTo(0,0);
+}
+function submit(){
+  const s=S[st];let n=0;A[st]=[];
+  document.querySelectorAll("[data-q]").forEach(inp=>{
+    const q=s.q[+inp.dataset.q],v=norm(inp.value),ok=!!v&&q[1].some(k=>v.includes(k));
+    if(ok)n++;A[st].push({v:inp.value.trim(),ok});
+  });
+  R[st]=n;
+  const all=Object.keys(R).length===S.length;
+  app.innerHTML=`<h1>Tahap ${st+1} selesai</h1>
+  <p class="lead">Jawabanmu sudah tersimpan dan tahap ini tidak bisa diulang. ${all?"Ketiga tahap sudah selesai.":"Penilaian muncul setelah ketiga tahap selesai."}</p>
+  <div class="row"><button data-a="${all?"sum":"home"}">${all?"Lihat penilaian akhir":"Lanjut ke menu tahap"}</button></div>`;
+  window.scrollTo(0,0);
+}
+function nilai(){return Math.round(benar()/total()*100);}
+function summaryText(){
+  return "Nama: "+name+"\nKelas: "+kelas+"\n"+S.map((s,i)=>"Tahap "+(i+1)+" ("+s.t+"): "+R[i]+"/"+s.q.length).join("\n")+"\nTotal benar: "+benar()+"/"+total()+"\nNilai: "+nilai()+" ("+(nilai()>=KKM?"Tuntas":"Belum tuntas")+", KKM "+KKM+")";
+}
+function sum(){
+  const nl=nilai(),wrong=S.map((s,i)=>A[i].map((a,j)=>a.ok?"":`<li>Tahap ${i+1}, soal ${j+1}: jawabanmu “${esc(a.v||"kosong")}”, kunci: ${s.q[j][2]}</li>`).join("")).join("");
+  app.innerHTML=`<h1>Penilaian akhir</h1>
+  <p class="lead">${esc(name)}, kelas ${esc(kelas)}</p>
+  <div class="score"><b>${nl}</b><span>${nl>=KKM?"Tuntas":"Belum tuntas"} (KKM ${KKM}). ${benar()} dari ${total()} soal benar.</span></div>
+  <table class="tb">${S.map((s,i)=>`<tr><td>Tahap ${i+1}: ${s.t}</td><td>${R[i]}/${s.q.length}</td></tr>`).join("")}</table>
+  ${wrong?`<h2>Jawaban yang perlu diperbaiki</h2><ul class="rv">${wrong}</ul>`:`<p class="lead">Semua jawaban benar.</p>`}
+  <div class="row"><button data-a="copy">Salin hasil</button></div>`;
+  window.scrollTo(0,0);
+}
+app.addEventListener("input",e=>{
+  if(e.target.id==="nm")name=e.target.value.trim();
+  if(e.target.id==="kl")kelas=e.target.value.trim();
+});
+app.addEventListener("click",e=>{
+  const b=e.target.closest("[data-a]");if(!b)return;
+  const a=b.dataset.a;
+  if(a==="stage"){
+    name=$("nm").value.trim();kelas=$("kl").value.trim();
+    if(!name||!kelas){$("er").textContent="Isi nama dan kelas dulu sebelum mulai.";return;}
+    st=+b.dataset.i;ix=0;card();
+  }
+  else if(a==="submit")submit();
+  else if(a==="home")home();
+  else if(a==="sum")sum();
+  else if(a==="copy"){
+    try{navigator.clipboard.writeText(summaryText()).then(()=>{b.textContent="Tersalin";},()=>{b.textContent="Gagal menyalin";});}
+    catch(err){b.textContent="Gagal menyalin";}
+  }
+});
+home();
+</script></body></html>
